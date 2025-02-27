@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron Address Bar</title>
+    <link rel="stylesheet" href="./toolbar.css" />
+  </head>
+  <body>
+    <div id="browser-tools" style="display: flex; width: 100vw">
+      <div id="button-container">
+        <button id="back-button">&larr;</button>
+        <button id="forward-button">&rarr;</button>
+        <button id="reload-button">&#x21bb;</button>
+        <button id="search-button">&#128270;</button>
+        <button id="new-window-button">+</button>
+      </div>
+      <form><label for="url-bar"></label><input id="url-bar" required /></form>
+      <button id="go">go</button>
+    </div>
+    <script type="module" src="/dist/toolbar.js"></script>
+  </body>
+</html>
