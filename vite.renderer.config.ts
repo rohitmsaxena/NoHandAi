@@ -5,6 +5,7 @@ import path from "path";
 export default defineConfig({
   //... other config
   build: {
+    outDir: ".vite/build/ui",
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "src/renderer/index.html"),
